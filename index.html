@@ -49,29 +49,6 @@
 
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<script src="script.js"></script>
 
-<script>
-    // dok carousel
-
-
-function toggleDokter(button, className) {
-    var hiddenText = document.querySelector('.' + className);
-    var carouselItem = button.closest('.carousel-item'); // Cari parent .carousel-item
-
-    if (hiddenText.style.display === 'none' || hiddenText.style.display === '') {
-        hiddenText.style.display = 'inline';
-        button.textContent = 'View less';
-        carouselItem.classList.add('expanded'); // Tambahkan kelas untuk tinggi auto
-    } else {
-        hiddenText.style.display = 'none';
-        button.textContent = 'View more';
-        carouselItem.classList.remove('expanded'); // Kembali ke tinggi 400px
-    }
-}
-
-
-// akhir dok carousel
-</script>
     </body>
     </html>
